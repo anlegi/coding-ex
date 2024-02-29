@@ -1,0 +1,26 @@
+<!doctype html>
+<script>
+const test = "test"
+
+const string = "border-left-width"
+console.log(string)
+
+const words = string.split('-')
+console.log(words)
+
+for (let i = 1; i < words.length; i++) {
+  words[i] = capitalizeFirstLetter(words[i])
+}
+console.log(words)
+
+const joinWords = words.join("")
+console.log(joinWords)
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+</script>
+<body>
+
+</body>
+</html>
