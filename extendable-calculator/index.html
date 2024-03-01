@@ -1,0 +1,31 @@
+<!doctype html>
+<script>
+function Calculator() {
+  this.operations = {}
+  this.addMethod = function(name, func) {
+    this.operations[name] = func
+  }
+  this.calculate = function(str) {
+    console.log(str)
+    let arr = str.split(" ")
+    console.log(arr)
+
+    // Check if operation from str is available in our operations
+    if (Object.keys(this.operations).includes(arr[1])) {
+      return this.operations[arr[1]](arr[0], arr[2])
+    } else {
+      console.log("Operator not defined")
+    }
+  }
+}
+
+let calc = new Calculator()
+calc.addMethod("*", (a, b) => a * b)
+calc.addMethod("/",(a, b) => a / b)
+calc.addMethod("-",(a, b) => a - b)
+console.log(calc.calculate("3 - 9"))
+</script>
+<body>
+
+</body>
+</html>
