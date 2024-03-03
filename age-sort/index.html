@@ -1,0 +1,21 @@
+<!doctype html>
+<script>
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let array = [pete, john, mary];
+console.log("Initial array: ", array)
+
+function sortByAge(arr) {
+  // Sort the array and then map function
+  return arr.sort((a, b) => a.age - b.age).map((obj) => obj.name)
+}
+
+let new_array = sortByAge(array)
+console.log("Sorted Array: ", new_array)
+</script>
+<body>
+
+</body>
+</html>
