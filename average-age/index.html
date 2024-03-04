@@ -1,0 +1,24 @@
+<!doctype html>
+<script>
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [ john, pete, mary ]
+
+function getAverageAge(users) {
+  let ages = users.map((user) => user.age)
+  let sum = 0
+  ages.forEach(num => {
+    sum += num
+  })
+  let average = sum / users.length
+  return average
+}
+
+console.log(getAverageAge(arr))
+</script>
+<body>
+
+</body>
+</html>
