@@ -1,0 +1,28 @@
+<!doctype html>
+<script>
+  let arr = [1, 2, 4, 3, 5, 6, 7];
+
+  // Fisher-Yates Shuffle algorithm swaps the elements at indices i and j within the array
+  const shuffleFisherYates = (array) => {
+    // start at the last element of array; array.length - 1 gives the last index
+    for (let i = array.length - 1; i > 0; i--) {
+      // Math.random returns a random nr between 0(incl.) and 1(excl.); Math.floor rounds a nr down to the nearest integer
+      // Multiplying this by (i + 1) scales this range to between 0 and i (inclusive)
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
+  const shuffleSort = (array) => {
+    return array.sort(() => Math.random() - 0.5)
+  }
+
+  let solutionArray = shuffleSort(arr)
+  // let solutionArray = shuffleFisherYates(arr)
+  console.log(solutionArray)
+</script>
+<body>
+
+</body>
+</html>
