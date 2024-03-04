@@ -1,0 +1,19 @@
+<!doctype html>
+<script>
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"]
+
+function unique(array) {
+  return array.filter((currentValue, index, arr) => ( // filter returns a new array
+    arr.indexOf(currentValue) === index
+  ))
+}
+
+let uniqueArr = unique(strings)
+console.log(uniqueArr)
+</script>
+<body>
+
+</body>
+</html>
