@@ -19,7 +19,7 @@ function merge(leftArr, rightArr) {
   }
   return [...sortedArr, ...leftArr, ...rightArr] // one of these arrays may still have elements left after the main loop exits. This situation occurs because the loop stops as soon as one array is empty, irrespective of whether there are remaining elements in the other array
 } // spread operators (...) are used to concatenate sortedArr with any remaining elements in leftArr and rightArr
-// any remaining elements in these arrays are already sorted and just need to be appended to the end of sortedArr
+// remaining elements in these arrays are already sorted and just need to be appended to the end of sortedArr
 
 
 const arr = [8, 20, -2, 4, -6]
