@@ -10,8 +10,8 @@ function caeserCipher(string, shiftFactor) {
     // console.log(index)
     const cipherIndex = index + shiftFactor
     let cipherCharacter = ""
-    if (index == plainText.length - 1) {
-      cipherCharacter = plainText[(-1) + shiftFactor]
+    if (cipherIndex > plainText.length - 1) {
+      cipherCharacter = plainText[cipherIndex - (plainText.length)]
     } else {
       cipherCharacter = plainText[cipherIndex]
     }
