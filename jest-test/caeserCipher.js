@@ -19,3 +19,6 @@ function caeserCipher(string, shiftFactor) {
   }
   return text
 }
+
+
+module.exports = caeserCipher;
