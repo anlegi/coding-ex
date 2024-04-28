@@ -27,7 +27,7 @@ function analyzeArray(array) {
     length: length
   }
 }
-
+ // sth
 module.exports = analyzeArray;
 
 console.log(analyzeArray([0, 8, 3, 4, 2, 6]));
