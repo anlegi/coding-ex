@@ -1,0 +1,14 @@
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: rgb(79, 113, 207);
+  color: white;
+  border-radius: 5px;
+}
+
+
+.popup-modal {
+  border: solid black;
+  border-radius: 5px;
+}
