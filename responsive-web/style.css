@@ -60,7 +60,7 @@ header {
 }
 
 .img-profile {
-  width: 80%;
+  width: 60%;
   height: auto; /* keeps aspect ratio of img */
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -69,6 +69,9 @@ header {
 .about-container {
   flex: 2; /* takes up twice as much space as the img container*/
   padding-left: 20px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-title {
@@ -80,4 +83,110 @@ header {
 .about-text {
   font-size: 15px;
   color: #666666;
+}
+
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: auto; /* centers the grid in its parent container */
+  grid-gap: 40px;
+  padding: 20px;
+}
+
+.project-item {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+}
+.project-title {
+  display: flex;
+  align-items: center; /* aligns title and icons vertically centered */
+  justify-content: space-between; /* places title on left and icons on right */
+  font-size: 18px;
+  color: #323232;
+  margin-bottom: 5px;
+}
+
+.project-text {
+  font-size: 15px;
+  color: #666666;
+}
+
+
+.project-links ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-list-item {
+  display: inline-block; /* Display links inline */
+  margin-left: 10px;
+}
+
+.project-list-item a {
+  text-decoration: none;
+  color: #323232;
+  font-weight: bold;
+}
+
+.project-list-item a:hover {
+  color: #575757;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* stacks the flex children vertically*/
+    align-items: center; /* centers the items when stacked */
+  }
+
+  .image-container, .about-container {
+    flex: none; /* removes the flex grow and shrink */
+    width: 100%; /* full width for small screens */
+    padding: 10px 0; /* adjusts padding for a vertical layout */
+    text-align: center; /* centers the text inside the containers */
+  }
+
+  .img-profile {
+    width: 50%; /* Makes the image smaller on smaller screens */
+  }
+
+  .work-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
 }
