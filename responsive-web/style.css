@@ -1,9 +1,12 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: lightgrey;
+  background-color: rgb(227, 227, 227);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -38,4 +41,43 @@ header {
 
 .nav-list-item a:hover {
   color: #000;
+}
+
+
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.img-profile {
+  width: 80%;
+  height: auto; /* keeps aspect ratio of img */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+  flex: 2; /* takes up twice as much space as the img container*/
+  padding-left: 20px;
+}
+
+.about-title {
+  font-size: 20px;
+  color: #505050;
+  margin-bottom: 5px;
+}
+
+.about-text {
+  font-size: 15px;
+  color: #666666;
 }
