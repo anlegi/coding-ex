@@ -154,6 +154,15 @@ class LinkedList {
     previous.next = null; // Remove the last node
   }
 
+
+  // returns true if the passed in value is in the list and otherwise returns false
+  contains(value) {
+
+  }
+
+  // to string
+
+
   printListData() {
     let current = this.head;
 
