@@ -3,7 +3,7 @@ def nb_year(p0, percent, aug, p)
   population = p0
 
   while population <= p do
-    population += (population * (percent / 100.0)) + aug
+    population += (population * (percent / 100.0)).to_i + aug
     years += 1
   end
   return years
